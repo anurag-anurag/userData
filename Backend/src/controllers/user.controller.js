@@ -39,7 +39,7 @@ const updateUser = async(req,res)=>{
         const user = await User.findByIdAndUpdate(req.params.id,req.body,{new:true})
         res.status(200).json({
             success:true,
-            message:"user updated",
+            message:"user updated finally",
             user:user
         })
     } catch (error) {
